@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration \form"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        android:textColor="@color/black"
+        android:background="@color/cardview_shadow_start_color"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/etFname"
+        android:layout_width="318dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etLname"
+        android:layout_width="318dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etFname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etFname"
+        app:layout_constraintTop_toBottomOf="@+id/etFname" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="318dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etLname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etLname"
+        app:layout_constraintTop_toBottomOf="@+id/etLname" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="318dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+    @+id/editTxtPassword"
+    app:layout_constraintTop_toBottomOf="@+id/editTxtPassword" />
+
+    <EditText
+        android:id="@+id/edtAreaCode"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Area Code"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />@+id/etPassword"
+    app:layout_constraintTop_toBottomOf="@+id/editTxtPassword" />
+
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="176dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="318dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etNumber"
+        app:layout_constraintStart_toStartOf="@+id/edtAreaCode"
+        app:layout_constraintTop_toBottomOf="@+id/edtAreaCode"
+        app:layout_constraintVertical_bias="0.155">
+
+
+        <RadioButton
+            android:id="@+id/rdMale"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="511dp" />
+
+        <RadioButton
+            android:id="@+id/rdFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Female"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="511dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:text="Sign_In"
+        app:layout_constraintEnd_toEndOf="@+id/radioGrp"
+        app:layout_constraintStart_toStartOf="@+id/radioGrp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrp"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811451101914",
+    "project_id": "academic-registration",
+    "storage_bucket": "academic-registration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811451101914:android:c0bdecd66da7273107ebe3",
+        "android_client_info": {
+          "package_name": "com.example.academicregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811451101914-drp9u3jc5eik5c73gr81ed6jl49vbhkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ5mk3QEmeZnA0rV9jpkYRDQClwtM5vdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811451101914-drp9u3jc5eik5c73gr81ed6jl49vbhkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
