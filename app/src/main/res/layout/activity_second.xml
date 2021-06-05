@@ -4,16 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+    android:background="@drawable/gradient">
 
     <TextView
         android:id="@+id/txtWelcome"
-        android:layout_width="186dp"
-        android:layout_height="68dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="325dp"
+        android:layout_height="72dp"
+        android:background="@drawable/header"
+        android:fontFamily="sans-serif-black"
         android:text="Welcome!!!"
+        android:textColor="@color/white"
         android:textSize="37dp"
+        android:textAlignment="center"
+        android:paddingTop="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <EditText
+        android:id="@+id/etEmailLg"
+        android:layout_width="349dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        />
+
+    <EditText
+        android:id="@+id/etPasswordLg"
+        android:layout_width="349dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/etEmailLg"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="@+id/etEmailLg"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailLg"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/custom_lock_icon"/>
+
+    <Button
+        android:id="@+id/btnLg"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/back_button"
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+
+        android:textSize="22dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordLg"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordLg"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

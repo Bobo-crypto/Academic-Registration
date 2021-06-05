@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         etEmail = (TextView)findViewById(R.id.etEmail);
         etAreaCode = (TextView)findViewById(R.id.edtAreaCode);
         etNumber = (TextView)findViewById(R.id.etNumber);
-        btnSignin = (Button) findViewById(R.id.btnSignin);
+        btnSignin = (Button) findViewById(R.id.btnSingin);
 
         btnSignin.setOnClickListener(new View.OnClickListener() {
             @Override
