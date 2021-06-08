@@ -5,74 +5,128 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity"
-    android:background="@drawable/gradient">
+    >
 
     <TextView
         android:id="@+id/txtWelcome"
-        android:layout_marginTop="100dp"
-        android:layout_width="325dp"
-        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
         android:background="@drawable/header"
         android:fontFamily="sans-serif-black"
-        android:text="Welcome!!!"
-        android:textColor="@color/white"
-        android:textSize="37dp"
+        android:paddingTop="100dp"
+        android:text="Login into your Student account"
         android:textAlignment="center"
-        android:paddingTop="7dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/etEmailLg"
-        android:layout_width="349dp"
+        android:id="@+id/etUSerName"
+        android:layout_width="match_parent"
         android:layout_height="46dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/custom_input"
-        android:ems="10"
-        android:paddingLeft="15dp"
-        android:hint="Email Address"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
-        android:drawablePadding="10dp"
         android:drawableStart="@drawable/custom_email_icon"
-        />
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
 
     <EditText
         android:id="@+id/etPasswordLg"
-        android:layout_width="349dp"
+        android:layout_width="match_parent"
         android:layout_height="46dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:paddingLeft="15dp"
         android:hint="Password"
-        app:layout_constraintEnd_toEndOf="@+id/etEmailLg"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etUSerName"
         app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="@+id/etEmailLg"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailLg"
+        app:layout_constraintStart_toStartOf="@+id/etUSerName"
+        app:layout_constraintTop_toBottomOf="@+id/etUSerName"
         android:drawablePadding="10dp"
         android:drawableStart="@drawable/custom_lock_icon"/>
 
     <Button
         android:id="@+id/btnLg"
-        android:layout_width="204dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="297dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/back_button"
         android:fontFamily="sans-serif-black"
+        android:onClick="OnLogin"
         android:text="Login"
-
+        android:textColor="@color/white"
         android:textSize="22dp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/etPasswordLg"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="@+id/etPasswordLg"
         app:layout_constraintTop_toBottomOf="@+id/etPasswordLg" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="151dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="4dp"
+        android:foreground="@mipmap/ic_logo"
+        android:text="logo"
+        app:layout_constraintEnd_toEndOf="@+id/txtWelcome"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcome"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+    @color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnLg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLg"
+        app:layout_constraintTop_toBottomOf="@+id/btnLg" />
+
+
+
+
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/goRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/back_button"
+        android:padding="10dp"
+        android:text="Click to Register as a new student"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnLg"
+        app:layout_constraintStart_toStartOf="@+id/btnLg"
+        app:layout_constraintTop_toBottomOf="@+id/btnLg" />
+
+    <TextView
+        android:id="@+id/goAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/back_button"
+        android:padding="5dp"
+        android:text="LOGIN AS AN ADMIN"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/goRegister"
+        app:layout_constraintStart_toStartOf="@+id/goRegister"
+        app:layout_constraintTop_toBottomOf="@+id/goRegister" />
 </androidx.constraintlayout.widget.ConstraintLayout>
